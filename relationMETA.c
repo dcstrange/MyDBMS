@@ -26,8 +26,8 @@ struct AttributeDesc
     int attr_isfixsize;
 };
 
-
-struct AttributeDesc creatAttrDesc(char * name, long size,enum ATTR_TYPE type, int isfixsize)
+// Create an specific  attribute description item 
+struct AttributeDesc CreateAttrDesc(char * name, long size,enum ATTR_TYPE type, int isfixsize)
 {
     struct AttributeDesc attrDesc;
     strcpy(attrDesc.attr_name,name);
